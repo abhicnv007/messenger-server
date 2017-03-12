@@ -140,14 +140,18 @@ func login(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("name")
 	password := r.FormValue("password")
 
+	if name == "" || password == "" {
+		response.New(w).WithCode(http.StatusBadRequest).
+			Error("No username and/or password provided")
+		return
+	}
+
 	u, err := user.Check(c, name, password)
 	if err != nil {
 		response.New(w).WithCode(http.StatusBadRequest).
 			Error(err.Error())
 		return
 	}
-
-	//log.Println(password, " ", u.Password)
 
 	response.New(w).WithCode(http.StatusOK).
 		WithData(encodeUser(u))

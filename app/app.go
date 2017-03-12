@@ -11,11 +11,11 @@ import (
 
 	"encoding/json"
 
-	"github.com/abhicnv007/whistle/handler"
-	"github.com/abhicnv007/whistle/messaging"
-	"github.com/abhicnv007/whistle/parse"
-	"github.com/abhicnv007/whistle/response"
-	"github.com/abhicnv007/whistle/user"
+	"github.com/abhicnv007/messenger-server/handler"
+	"github.com/abhicnv007/messenger-server/messaging"
+	"github.com/abhicnv007/messenger-server/parse"
+	"github.com/abhicnv007/messenger-server/response"
+	"github.com/abhicnv007/messenger-server/user"
 	"github.com/gorilla/mux"
 )
 

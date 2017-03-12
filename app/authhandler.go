@@ -8,7 +8,7 @@ import (
 
 	gorillacon "github.com/gorilla/context"
 
-	"github.com/abhicnv007/whistle/user"
+	"github.com/abhicnv007/messenger-server/user"
 	"google.golang.org/appengine"
 )
 

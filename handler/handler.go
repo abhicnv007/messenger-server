@@ -1,7 +1,7 @@
 package handler
 
 import "net/http"
-import "github.com/abhicnv007/whistle/response"
+import "github.com/abhicnv007/messenger-server/response"
 
 //Handler is an object that is passed to the serve mux to handle routes
 type Handler struct {
